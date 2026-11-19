@@ -149,9 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // =========================================================================
   // 3. LIVE COUNTDOWN TIMER ("العد التنازلي")
-  // Target: December 25, 2026 at 10:00:00
+  // Target: December 25, 2026 at 10:30:00
   // =========================================================================
-  const targetDate = new Date('2026-12-25T10:00:00');
+  const targetDate = new Date('2026-12-25T10:30:00');
 
   function updateCountdown() {
     const now = new Date();
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
       openLocationModal({
         title: 'موقع العقد الشرعي',
         subtitle: 'قاعة الماسة - بلدية قمار (ولاية الوادي)',
-        time: 'الجمعة 25 ديسمبر 2026 - الساعة 10:00 صباحاً',
+        time: 'الجمعة 25 ديسمبر 2026 - الساعة 10:30 صباحاً',
         mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Salle+des+fetes+El+Massa+Guemar+El+Oued'
       });
     });
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
       openLocationModal({
         title: 'موقع مأدبة الغداء',
         subtitle: 'قاعة الماسة - بلدية قمار (ولاية الوادي)',
-        time: 'الجمعة 25 ديسمبر 2026 - الساعة 10:30 صباحاً',
+        time: 'الجمعة 25 ديسمبر 2026 - الساعة 11:00 صباحاً',
         mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Salle+des+fetes+El+Massa+Guemar+El+Oued'
       });
     });
@@ -378,9 +378,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. CALENDAR ICS GENERATOR & DOWNLOAD
   // =========================================================================
   function downloadICalendarFile() {
-    // Target event: 25 Dec 2026, 10:00:00 to 16:00:00 (UTC+1 Algeria)
-    // 10:00 Algeria = 09:00 UTC -> 20261225T090000Z
-    // 16:00 Algeria = 15:00 UTC -> 20261225T150000Z
+    // Target event: 25 Dec 2026, 10:30:00 to 16:30:00 (UTC+1 Algeria)
+    // 10:30 Algeria = 09:30 UTC -> 20261225T093000Z
+    // 16:30 Algeria = 15:30 UTC -> 20261225T153000Z
     const icsContent = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
@@ -390,10 +390,10 @@ document.addEventListener('DOMContentLoaded', () => {
       'BEGIN:VEVENT',
       'UID:wedding-ibrahim-20261225@invitation.dz',
       'DTSTAMP:20261119T000000Z',
-      'DTSTART:20261225T090000Z',
-      'DTEND:20261225T150000Z',
+      'DTSTART:20261225T093000Z',
+      'DTEND:20261225T153000Z',
       'SUMMARY:حفل زفاف ابراهيم حسام الدين',
-      'DESCRIPTION:يتشرف السيد سليم كير بدعوتكم لحضور حفل زفاف ابنه ابراهيم حسام الدين بقاعة الماسة - قمار (العقد الشرعي الساعة 10:00 صباحاً، مأدبة الغداء الساعة 10:30 صباحاً).',
+      'DESCRIPTION:يتشرف السيد سليم كير بدعوتكم لحضور حفل زفاف ابنه ابراهيم حسام الدين بقاعة الماسة - قمار (العقد الشرعي الساعة 10:30 صباحاً، مأدبة الغداء الساعة 11:00 صباحاً).',
       'LOCATION:قاعة الماسة للأفراح والاحتفالات، قمار، ولاية الوادي، الجزائر',
       'STATUS:CONFIRMED',
       'BEGIN:VALARM',
